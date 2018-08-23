@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    / Use the title from a page's frontmatter if it has one
+    %title= current_page.data.title || "BeeWMS"
+    = stylesheet_link_tag "site"
+    = javascript_include_tag "site"
+  %body
+    %header.bHeaderWrapper
+      .bHeader
+        .bHeader-logo
+          = image_tag('images/bee/Logo.png')
+        .bHeader-navigation
+          #hamburger.bHeader-hamburger= svg_tag('hamburger')
+          %ul#menu.aNavigation
+            %li.aNavigation-item
+              = link_to I18n.t('navigation.home'), '/'
+            %li.aNavigation-item
+              = link_to I18n.t('navigation.productDetail'), 'productDetail'
+            /*%li.aNavigation-item*/
+            /*  = link_to I18n.t('navigation.faq'), '#'*/
+            %li.aNavigation-item
+              = link_to I18n.t('navigation.contact'), 'contact'
+    = yield
+    .bFooterWrapper
+      .bFooter
+        .bFooter-infos
+          .bFooter-logo= image_tag('images/bee/ImgCorp.png')
+          <div id='footerCP'>© 2018 Copyright PTK SAS, Inc</div>
