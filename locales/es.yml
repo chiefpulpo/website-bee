@@ -118,4 +118,8 @@
     contact: CONTACTO
     home: INICIO
     productDetail: DETALLES DEL PRODUCTO
+  path:
+    contact: "/es/contact"
+    home: "/es/"
+    productDetail: "/es/productDetail"
   
