@@ -42,7 +42,8 @@ helpers do
   end
   def local_path(path, options={})
     lang = options[:locale] || I18n.locale.to_s
-    url_for "/#{lang}#{path}"
+    _path = "#{path}".gsub(/\/(en|es)\//, "/")
+    url_for "/#{lang}#{_path}"
   end
 end
 
