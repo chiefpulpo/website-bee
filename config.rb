@@ -40,6 +40,10 @@ helpers do
     return File.read(file_path) if File.exists?(file_path)
     '(not found)'
   end
+  def local_path(path, options={})
+    lang = options[:locale] || I18n.locale.to_s
+    url_for "/#{lang}#{path}"
+  end
 end
 
 configure :build do
