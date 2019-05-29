@@ -26,7 +26,7 @@
     header:
       headline: BeeWMS
       text1: BEE WMS Warehouse Management System allows you to take full control of your internal logistics. Automate your warehouse management processes, eliminate errors, connect all your systems and ensure maximun efficiency to safe money and time.
-      text2: BEE WMS was designed with the highest on-premise technology standards in mind, always checking for optimal synchronization with leading enterprise software solutions such as SAP Business One.
+      text2: BEE WMS was designed with the highest on-premise technology standards in mind, always checking for optimal synchronization with leading enterprise software solutions such as SIESA.
     things:
       headline: BEE WMS CORE PROCESSES
       item1: '**INCOMING GOODS**: Your staff can see on their mobile devices which supplier (or your internal production line) will deliver products and in what quantity. This way the staff can quickly verify quantity and quality to either initiate the warehousing or send-back process.'
